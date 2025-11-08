@@ -9,6 +9,7 @@ Also, it has the option that use extension keys and rotary encoders.
 
 Keyboard Maintainer: [foostan](https://github.com/foostan/) [@foostan](https://twitter.com/foostan)  
 Hardware Supported: Corne PCB
+
 Hardware Availability: [PCB & Case Data](https://github.com/foostan/crkbd)
 
 Flash example for this keyboard of v1 - v3:

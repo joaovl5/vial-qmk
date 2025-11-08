@@ -1,0 +1,299 @@
+layout: { "qmk_keyboard": "crkbd/rev1", "layout_name": "LAYOUT_split_3x6_3" }
+layers:
+  alpha:
+    - null
+    - "'"
+    - L
+    - P
+    - D
+    - F
+    - { "t": "," }
+    - W
+    - O
+    - U
+    - ""
+    - null
+    - { "s": "CapsLock", "h": "CapsWord" }
+    - { "t": "T", "h": "LCtrl" }
+    - { "t": "S", "h": "LAlt" }
+    - { "t": "N", "h": "LGui" }
+    - H
+    - M
+    - G
+    - C
+    - { "t": "A", "h": "LGui" }
+    - { "t": "I", "h": "LAlt" }
+    - { "t": "E", "h": "LCtrl" }
+    - null
+    - { "t": "", "type": "ghost" }
+    - V
+    - Z
+    - B
+    - K
+    - Q
+    - X
+    - Y
+    - /
+    - null
+    - J
+    - { "t": "", "type": "ghost" }
+    - { t: "Magic" }
+    - { "t": "R", "h": "nav" }
+    - LShift
+    - Space
+    - { "t": "sym" }
+    - { "t": "Repeat" }
+  nav:
+    - null
+    - { "t": "Quit" }
+    - { "t": "Switch App" }
+    - null
+    - null
+    - null
+    - null
+    - Home
+    - Bksp
+    - Del
+    - End
+    - null
+    - null
+    - LCtrl
+    - LAlt
+    - LGui
+    - LShift
+    - null
+    - "toggle vim"
+    - $$left$$
+    - $$down$$
+    - $$up$$
+    - $$right$$
+    - null
+    - { "t": "", "type": "ghost" }
+    - null
+    - null
+    - $$tab$$
+    - $$inverse_tab$$
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - { "t": "", "type": "ghost" }
+    - "▽"
+    - "▽"
+    - "▽"
+    - null
+    - "▽"
+    - null
+  num:
+    - null
+    - null
+    - null
+    - null
+    - null
+    - { "s": "LSFT+", "t": "|" }
+    - null
+    - 9
+    - null
+    - null
+    - null
+    - null
+    - null
+    - { "s": "LSFT+", "t": "@" }
+    - { "s": "LSFT+", "t": "$" }
+    - { "s": "LSFT+", "t": "*" }
+    - { "s": "LSFT+", "t": "_" }
+    - { "s": "LSFT+", "t": "+" }
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - null
+    - { "t": "", "type": "ghost" }
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - 5
+    - 6
+    - 7
+    - 8
+    - { "t": "", "type": "ghost" }
+    - "▽"
+    - LShift
+    - "▽"
+    - "▽"
+    - "▽"
+    - null
+  nav_vim:
+    - "▽"
+    - "▽"
+    - "▽"
+    - "▽"
+    - "▽"
+    - "▽"
+    - "▽"
+    - { "s": ")", "t": "0" }
+    - "▽"
+    - "▽"
+    - { "s": "LSFT+", "t": "$" }
+    - "▽"
+    - "▽"
+    - "▽"
+    - "▽"
+    - "▽"
+    - "▽"
+    - { "s": "LSFT+", "t": ">" }
+    - "TG L3"
+    - H
+    - J
+    - K
+    - L
+    - "▽"
+    - { "t": "", "type": "ghost" }
+    - "▽"
+    - "▽"
+    - { "s": "LSFT+", "t": ">" }
+    - { "s": "LSFT+", "t": "<" }
+    - "▽"
+    - "▽"
+    - "▽"
+    - "▽"
+    - "▽"
+    - "▽"
+    - { "t": "", "type": "ghost" }
+    - "▽"
+    - "▽"
+    - "▽"
+    - "▽"
+    - "▽"
+    - "▽"
+combos:
+  ### essentials
+  - {
+      "p": [38, 39],
+      "k": "Esc",
+      "l": ["alpha"],
+      "draw_separate": false,
+      align: "bottom",
+    }
+  - { "p": [13, 14], "k": "$$tab$$", "l": ["alpha"], "draw_separate": false }
+  - { "p": [16, 17], "k": "$$enter$$", "l": ["alpha"], "draw_separate": false }
+  - {
+      "p": [19, 20],
+      "k": "$$backspace$$",
+      "l": ["alpha"],
+      "draw_separate": false,
+    }
+  - { "p": [38, 19, 20], "k": "Del", "l": ["alpha"] }
+  ### lefthand math/finance stuffs
+  - {
+      "p": [2, 3, 4],
+      "k": { "t": "=" },
+      "l": ["alpha"],
+      "draw_separate": false,
+      "align": "top",
+    }
+  - {
+      "p": [2, 3],
+      "k": { "t": "$$add$$" },
+      "l": ["alpha"],
+      "draw_separate": false,
+    }
+  - {
+      "p": [14, 15],
+      "k": { "t": "$$minus$$" },
+      "l": ["alpha"],
+      "draw_separate": false,
+    }
+  - { "p": [26, 27], "k": { "t": "_" }, "l": ["alpha"], "draw_separate": false }
+  - { "p": [26, 27, 16], "k": { "t": "$" }, "l": ["alpha"] }
+  - { "p": [26, 27, 17], "k": { "t": "%" }, "l": ["alpha"] }
+  - { "p": [14, 27], "k": { "t": "*" }, "l": ["alpha"] }
+
+  ### other symbols
+  - { "p": [38, 3], "k": { "t": ":" }, "l": ["alpha"] }
+  - { "p": [37, 3], "k": { "t": ";" }, "l": ["alpha"] }
+  - { "p": [8, 18], "k": { "t": "?" }, "l": ["alpha"] }
+  - { "p": [8, 19], "k": { "t": "!" }, "l": ["alpha"] }
+  - { "p": [7, 20, 21], "k": { "t": "@" }, "l": ["alpha"] }
+  - { "p": [7, 8, 21], "k": { "t": "&" }, "l": ["alpha"] }
+  #### diacritics
+  - { "p": [19, 10], "k": { "t": "~" }, "l": ["alpha"] }
+  - { "p": [19, 8, 21], "k": { "t": "^" }, "l": ["alpha"] }
+  - { "p": [19, 9], "k": { "t": '"' }, "l": ["alpha"] }
+  ### coding syms
+  - { "p": [32, 13], "k": { "t": "|" }, "l": ["alpha"] }
+  - { "p": [32, 38], "k": { "t": "\\" }, "l": ["alpha"] }
+  - { "p": [1, 37], "k": "`", "l": ["alpha"] }
+  - { "p": [1, 38], "k": '"', "l": ["alpha"] }
+  - { "p": [37, 19], "k": { "t": "<" }, "l": ["alpha"] }
+  - { "p": [37, 22], "k": { "t": ">" }, "l": ["alpha"] }
+  - { "p": [38, 19], "k": { "t": "{" }, "l": ["alpha"] }
+  - { "p": [38, 22], "k": { "t": "}" }, "l": ["alpha"] }
+  - { "p": [39, 19], "k": { "t": "(" }, "l": ["alpha"] }
+  - { "p": [39, 22], "k": { "t": ")" }, "l": ["alpha"] }
+  - { "p": [40, 19], "k": { "t": "[" }, "l": ["alpha"] }
+  - { "p": [40, 22], "k": { "t": "]" }, "l": ["alpha"] }
+draw_config:
+  inner_pad_w: 2.0
+  inner_pad_h: 2.0
+  outer_pad_w: 20.0
+  outer_pad_h: 30.0
+  line_spacing: 1.5
+  arc_radius: 8
+  key_w: 45
+  key_h: 45
+  combo_w: 17
+  combo_h: 25
+  key_rx: 7.0
+  key_ry: 7.0
+  svg_extra_style: |
+    svg.keymap {
+      font-family: "Inter", sans-serif;
+      font-size: 14px;
+    }
+
+    rect.key { fill: #222233; }
+    rect.key, rect.combo { stroke: #626277; }
+    rect.combo, rect.combo-separate { fill: #4b3891; }
+    rect.held, rect.combo.held { fill: #cc475b; ; }
+  glyphs:
+    backspace: |
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M216,40H68.53a16.12,16.12,0,0,0-13.72,7.77L9.14,123.88a8,8,0,0,0,0,8.24l45.67,76.11h0A16.11,16.11,0,0,0,68.53,216H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40ZM165.66,146.34a8,8,0,0,1-11.32,11.32L136,139.31l-18.35,18.35a8,8,0,0,1-11.31-11.32L124.69,128l-18.35-18.34a8,8,0,1,1,11.31-11.32L136,116.69l18.34-18.35a8,8,0,0,1,11.32,11.32L147.31,128Z"/></svg>
+    tab: |
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right-to-arc"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12h12" /><path d="M11 8l4 4l-4 4" /><path d="M12 21a9 9 0 0 0 0 -18" /></svg>
+    inverse_tab: |
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-left-to-arc"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21 12h-12" /><path d="M13 16l-4 -4l4 -4" /><path d="M12 3a9 9 0 1 0 0 18" /></svg>
+    add: |
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 5l0 14" /><path d="M5 12l14 0" /></svg>
+    minus: |
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-minus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /></svg>
+    enter: |
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-back"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 11l-4 4l4 4m-4 -4h11a4 4 0 0 0 0 -8h-1" /></svg>
+    left: |
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M5 12l4 4" /><path d="M5 12l4 -4" /></svg>
+    right: |
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M15 16l4 -4" /><path d="M15 8l4 4" /></svg>
+    up: |
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-up"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 5l0 14" /><path d="M16 9l-4 -4" /><path d="M8 9l4 -4" /></svg>
+    down: |
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 5l0 14" /><path d="M16 15l-4 4" /><path d="M8 15l4 4" /></svg>
+  dark_mode: true
+  n_columns: 1
+  separate_combo_diagrams: true
+  combo_diagrams_scale: 4
+  append_colon_to_layer_header: true
+  small_pad: 4.0
+  legend_rel_x: 0.0
+  legend_rel_y: 0.0
+  footer_text: via <a href="https://github.com/caksoylar/keymap-drawer">keymap-drawer</a>
+  shrink_wide_legends: 5
+  style_layer_activators: true
+  glyph_tap_size: 14
+  glyph_hold_size: 12
+  glyph_shifted_size: 10
